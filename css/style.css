@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    /* border: 1px solid black; */
+}
+
+#menu {
+    background-color: black;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+#pagina, #menu {
+    padding: 10px 150px;
+}
+
+.seccion {
+    display: flex;
+    flex: 1;
+    align-items: center;
+}
+
+.seccion > li {
+    list-style: none;
+    padding-right:20px;
+}
+
+#logueo {
+    padding: 0.5em 0.8em;
+    background-color: skyblue;
+}
+
+#pagina {
+    display: flex;
+}
+
+#panelIzquierda {
+    flex: 2;
+    margin-right: 20px;
+}
+
+#panelDerecha {
+    flex: 1;
+}
+
+#panelIzquierda > div, #panelDerecha > div {
+    margin-top: 10px;
+    margin-bottom: 20px;
+}
+
+.misDatosArriba {
+    background-color: skyblue;
+    height: 80px;
+    padding-left: 30px;
+}
+
+.misDatosAbajo {
+    border: 3px solid gray;
+    border-top: 0px;
+    padding: 50px 0px 20px 20px;
+}
+
+.misDatosAbajo > div {
+    margin-top: 10px;
+}
+
+.imagenUsuario {
+    width: 80px;
+    border: 1px solid gray;
+    border-radius: 50%;
+    padding: 2px;
+    background-color: white;
+    position: relative;
+    top: 35px;
+}
+
+#iconoMapa {
+    width: 10px;
+    padding-right: 5px;
+}
+
+#iconoEditar {
+    width: 16px;
+}
+
+.dato {
+    vertical-align: 2px;
+}
+
+.arribaDerecha {
+    background-color: rgb(60, 60, 60);
+    height: 30px;
+    color: white;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+}
+
+.abajoDerecha, .verMas {
+    border: 3px solid gray;
+    border-top: 0px;
+    padding: 10px;
+}
+
+.numerito {
+    background-color: gray;
+    border: 1px solid black;
+    border-radius: 50%;
+    padding: 5px 10px;
+}
+
+.titulo {
+    padding-left: 10px;
+}
+
+#panelDerecha li {
+    list-style: none;
+}
+
+.iconoAceptar, .iconoCancelar {
+    width: 30px;
+    margin-left: 5px;
+}
+
+.imagenContacto {
+    width: 40px;
+    border: 1px solid white;
+    border-radius: 50%;
+}
+
+.lista {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+}
+
+.nombre {
+    flex:1;
+    padding-left: 10px;
+}
+
+.educacion > .abajoDerecha{
+    padding-left: 20px;
+}
+
+.educacion .fecha {
+    color : gray;
+    padding: 10px 0px;
+}
