@@ -30,7 +30,7 @@
                         <img class="imagenUsuario" src="img/icons/user-circle.png" alt="imagen de avatar de usuario">
                     </div>
                     <div class="misDatosAbajo">
-                        <h2>Jane Doe</h2>
+                        <h2 id="nombreUsuario">Jane Doe</h2>
                         <div>
                             <img id="iconoMapa" src="img/icons/map-marker.png" alt="imagen de icono de mapa">
                             <span class="dato">Seattle</span>    
@@ -39,9 +39,9 @@
                             <p>Developer | Enginneer | Problem Solver</p>
                             <p>Master of shadows and the Internet</p>
                         </div>
-                        <div>
+                        <div id="editarUsuario">
                             <img id="iconoEditar" src="img/icons/gear.png" alt="imagen de icono de engranaje">
-                            <span class="dato">Edit Profile</span>
+                            <a onclick="editar()" href="#" class="dato">Edit Profile</a>
                         </div>
                     </div>
                 </div>
@@ -59,29 +59,29 @@
             <div id="panelDerecha">
                 <div id="conecciones">
                     <div class="arribaDerecha">
-                        <span class="numerito">2</span>
+                        <span id="numeroSolicitudes" class="numerito">2</span>
                         <span class="titulo">Connection Requests</span>
                     </div>
                     <div class="abajoDerecha">
                         <ul>
-                            <li class="lista">
+                            <li id="contacto1" class="lista">
                                 <img class="imagenContacto" src="img/images/todd-s.jpg" alt="foto de Todd">
                                 <p class="nombre">Todd E</p>
-                                <img class="iconoAceptar" src="img/icons/accept-circle.png" alt="icono de aceptar">
-                                <img class="iconoCancelar" src="img/icons/close-circle.png" alt="icono de cancelar">
+                                <img onclick="agregar(this)" class="iconoAceptar" src="img/icons/accept-circle.png" alt="icono de aceptar">
+                                <img onclick="remover(this)" class="iconoCancelar" src="img/icons/close-circle.png" alt="icono de cancelar">
                             </li>
-                            <li class="lista">
+                            <li id="contacto2" class="lista">
                                 <img class="imagenContacto" src="img/images/phil-s.jpg" alt="foto de Phill">
                                 <p class="nombre">Phill K</p>
-                                <img class="iconoAceptar" src="img/icons/accept-circle.png" alt="icono de aceptar">
-                                <img class="iconoCancelar" src="img/icons/close-circle.png" alt="icono de cancelar">
+                                <img onclick="agregar(this)" class="iconoAceptar" src="img/icons/accept-circle.png" alt="icono de aceptar">
+                                <img onclick="remover(this)" class="iconoCancelar" src="img/icons/close-circle.png" alt="icono de cancelar">
                             </li>
                         </ul>
                     </div>
                 </div>
                 <div class="tusConecciones">
                     <div class="arribaDerecha">
-                        <span class="numerito">500+</span>
+                        <span id="numeroConexiones" class="numerito">498</span>
                         <span class="titulo">Your Connections</span>
                     </div>
                     <div class="abajoDerecha">
@@ -111,5 +111,6 @@
             </div>
         </div>
     </div>
+    <script src="./js/index.js"></script>
 </body>
 </html>
